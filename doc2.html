@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="doc2.css">
+</head>
+<body>
+    <div class="container">
+        <h1></h1>
+        <div class="photo">
+            <img src="" alt="Foto do Casal" id="couplePhoto">
+        </div>
+        <div class="rating">
+            <p>Dê sua nota:</p>
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5" title="5 estrelas">5</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4" title="4 estrelas">4</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3" title="3 estrelas">3</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2" title="2 estrelas">2</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1" title="1 estrela">1</label>
+        </div>
+        <div class="comment">
+            <textarea id="comment" rows="4" placeholder="Deixe seu comentário aqui..."></textarea>
+        </div>
+        <div class="name">
+            <input type="text" id="name" placeholder="Digite seu nome...">
+        </div>
+        <button onclick="submitRating()">Enviar Nota</button>
+        <button onclick="showComments()">Mostrar Comentários</button>
+        <div id="commentsContainer"></div>
+        <p id="result"></p>
+    </div>
+    <script src="doc2.js"></script>
+</body>
+</html>
+
